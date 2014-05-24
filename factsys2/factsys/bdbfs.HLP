@@ -1,0 +1,268 @@
+~MAINPositioning:
+  Moving	-><- , PgUp, PgDn		Last Field	CtrlEnd
+  Go Top	CtrlPgUp			First Field	CtrlHome
+  Go Bottom	CtrlPgDn
+  Top of next page	AltPgDn		Top of previous page	AltPgUp
+
+Menu: F10,AltV					UserMenu: F12
+
+DataBase Functions:
+  Select DataBase	F4			Append		F3,Ins
+  Set Index to		F5			Append/Copy	AltF3
+  Index to		AltF9			Insert Before	ShiftF3
+  Reindex		AltF5			Count		CtrlF6
+  Show/Print Structure	AltF2			Sum Field	AltF6
+  Set Filter		AltF,AltF11		Total		AltShiftF6
+  Sort			AltS,CtrlF11
+  Append from		CtrlF9	  [.txt=Sdf]	Copy to		CtrlF3
+  Copy with MEMO converting	CtrlShiftF3
+  Print [to File]	F2			Print record	AltP
+  Modify structure	ShiftF2			Set Fields To	CtrlF2
+  Edit record		AltE			Wide Edit	AltW
+  Swap with upper record	Ctrl
+  Swap with down record		Ctrl
+
+Replacing:
+			 		 Always	      Confirm each record
+
+  Current with expression		 AltR		   AltShiftR
+  All records with constant expression	 AltF4		   AltShiftF4
+  All with varied expression		 CtrlF4		   CtrlShiftF4
+
+Finding:
+  Go to Record		F6		Seek index		F9
+  Locate		F7		Continue locate		AltF7
+  Context search	AltI		Next context		AltShiftI
+  Find Max/Min		AltM		Locate in field		F11
+  Find longest		CtrlL		Seek double		Alt2
+  WildSeek		Alt[		Continue WildSeek	AltShift[
+
+Deleting/Recalling:
+  Mark/Unmark		Del,CtrlT	Delete For	CtrlF8
+  Pack			F8		Recall For	CtrlF7
+  Zap			AltF8
+  Current Field		ShiftF4		All Fields	CtrlY
+
+Field operations:
+  Copy from up		Alt		Copy from down		Alt
+  Copy from left	Alt<-		Copy from right		Alt->
+  Change with up	AltShift	Change with down	AltShift
+  LowerCase		AltL		UpperCase		AltU
+  QWERTY->NatKbd	AltQ		NatKbd->QWERTY		AltY
+  Capitalize		AltK
+
+ClipBoard:
+  Copy To		CtrlGrey+	Show			CtrlEnter
+  Copy From		CtrlGrey-,AltGreyEnter
+  Add  To		AltGrey+	Sub From		AltGrey-
+  Divide		AltGrey/	Multiplicate		AltGrey*
+  Copy To clipboard	 CtrlGrey+	Copy From Clipboard	CtrlGrey-
+  Copy to WIN clipboard	 CtrlIns	Copy from WIN clipboard ShiftIns
+
+Compound indexes:
+  Set Tag Number	ShiftF7		Set Tag Name		ShiftF8
+  Make Tag Name		ShiftF9		Del Tag Name		ShiftF10
+  Select Tag		ShiftF12,AltT	Set another CDX		ShiftF11
+
+Other:
+  Quit			Esc		Quit immediately	AltX
+  Os Exit		AltF10		Change disk & Dir	CtrlF10
+  Macro from var _MACRO CtrlF1		Set Variable or Array	CtrlF5
+  Calculation		?,ShiftF6,AltG	Read IniFile		CtrlF12
+  Save vue		ShiftF1		Restore Vue		ShiftF5
+  Set color condition	AltB		Restore color		AltShiftB
+  Save position		CtrlK+0..9	Restore position	CtrlQ+0..9
+  Freeze Fields		AltZ		Information		AltF1
+  Filer			AltF12		Re-read			CtrlR
+~GETFIELD
+Positioning:
+  Next Field	Tab
+  Prev.Field	ShiftTab
+  Moving	  , PgUp, PgDn
+
+Enter Mode:
+  Switch Enter Mode	F4
+  "Usual" - <Enter> at last field stops input
+  "Lock"  - <Enter> at any field moves to same field of next record
+  "Skip"  - <Enter> at last field moves to first field of next record
+
+Deleting:
+  Mark/Unmark record	ShiftDel
+  Current Field		CtrlY
+  Undo			CtrlU
+
+Other:
+  Quit			 Esc		Quit/write		CtrlW,F10
+  Append blank		 F3
+  Macro from var _MACRO	 CtrlF1		Capitalize		AltK
+  LowerCase		 AltL		UpperCase		AltU
+  QWERTY->NatKbd	 AltQ		NatKbd->QWERTY		AltY
+  Copy from up		 Alt		Copy from down		Alt
+  Copy to clipboard	 CtrlGrey+	Copy from clipboard	CtrlGrey-
+  Copy to WIN clipboard	 CtrlIns	Copy from WIN clipboard ShiftIns
+~MODIFY_STR
+	Here you can change structure of a database.
+ Only latin letters, figures and special characters
+ are allowed, and the name should begin with the letter.
+
+			 Hot keys:
+
+	Enter - changes the property (if it is possible),
+	F3  - adds a new field,
+	F5  - inserts a field before current,
+	F8  - removes a field,
+	F9  - optimizes structure,
+	Ctrl, Ctrl -  changes place order,
+	F10 - finishes and writes changes,
+	Esc - cancels changes.
+~SETFIELD
+	Here you can set the contents, names and pictures of the fields.
+ The contents of a field can be any allowable expression.
+ The symbols of national alphabets are allowed in the names,
+ and these names will be used and at a printing.
+ The pictures also will be used at a printing and at an edition.
+ When the field is marked as deleted, It will not be shown and edited.
+
+	 Example:
+
+ Content of a field: Sqrt(Numeric)
+ Name: Square root
+ Picture: 999,999.99
+
+			 Hot keys:
+
+	Enter - changes the property,
+	F5  - repeats setting (after last CtrlF2), it allows to define
+	      the necessary content iterationally.
+	Del - blocks/unblocks current field,
+	F7  - unblocks rest fields,
+	F8  - blocks rest fields,
+	Ctrl, Ctrl -  changes place order,
+	F10 - finishes and writes changes,
+	Esc - cancels changes.
+~FORGET
+	Input the necessary value and press Enter.
+
+ By pressing a key F4 (or Ctrl), you can pick up value from a history
+ of current condition, AltF4 (or CtrlShift) - from global history,
+ CtrlF4 - from history of results.
+
+ Other keys are intended for simplification of input:
+	F2 - enters a name of the field
+	F3 - heading of the field
+	F5 - content of the field
+	F6 - name of the current base
+
+ It's possible also to press a key F10 and to choose these values
+ from menu.
+
+	If the field is character, it's possible to make some more
+ operations, accessible via F7.
+~PRT
+	You should input the file name when outputting to a disk.
+
+ By press a key F9, you can make a priniting configuration.
+~CONFIGURE
+	Here you can make a configuration of a printing.
+
+ Have in view of, that:
+ - A starting and final sequence are set by expression,
+   f.e.: chr(27) + '!' +CHR(0);
+ - Length of a sheet > 30 lines;
+ - The settings are kept before restart.
+~OTHERCONF
+	Here you can make adjustment some system variables.
+
+ Have in view of, that:
+ - The macro-sequence is set by expression,
+   f.e.: chr(4) +CHR(13) + "example" or as array of keycodes;
+ - External viewer and editor should be in PATH or are specified
+   together with a PATH;
+ - The settings are kept before restart; for constant change
+   it is necessary to set them in INI a file (see BDBFS.TXT).
+~FORACH
+	Choose the necessary element and press Enter or click by mouse.
+~FULLEDIT
+	You are in a "EDIT" mode.
+
+ If all fields of the record are not located on one page, it's possible
+ to scroll information by pressing PgUp, PgDn.
+ Differently - transition between records.
+
+ To finish a mode press ESC or CtrlW (CtrlEnd).
+~MEMO_EDIT
+	You are in a mode of edition of the textual information.
+
+	F2 prints information.
+	F3 saves to file.
+	F4 loads from file.
+	F5 switches a mode of auto-wrapping of lines.
+	F6,Shift+Ins inserts Win clipboard in the current position.
+	F9 tunes some system variables.
+	CtrlGrey- inserts internal clipboard in the current position.
+	Ctrl-Y  deletes the current line.
+	Ctrl-T  deletes word right.
+	Ctrl-B  reforms paragraph.
+	F10 (CtrlW) writes down all changes.
+~H1
+	Pick up necessary value from a history and press Enter or
+ click by mouse.
+	If any value in a history superfluous and further not
+ it is required - press "on it" CtrlD.
+~H2
+	Choose the necessary file and press Enter or click by mouse.
+
+	F2 changes the current disk.
+	F5 returns to the catalogue, with which the search began.
+	F9 changes the mask of selectable files.
+~HF2
+	You can choose some actions with files and catalogue:
+
+	F2 changes the current disk.
+	F3 views the current file.
+	F4 edits the current file.
+	F5 returns to the catalogue, with which the search began.
+	F9 changes the mask of selectable files.
+	F10 shows descrition of the current file (from descript.ion).
+
+	When you press Enter, the action for current extension is executed
+	(see docs).
+~H3
+	By pressing INS or SPACE you can unmark not needable fields.
+	ALT-(gray) unmarks all fields,
+	ALT+(gray) marks all fields.
+
+	Press Enter, when operations done.
+~H9
+	Operations with structure of base are here.
+
+	F2 (Shift+Tab) - prints the structure (on the device _printer).
+	F4 - writes the structure to a file with a name of base and
+	     extension STP.
+	F5 - creates a file with a name of base and extension STE:
+	     structure of base in a format COPY STRU EXTENDED.
+	F6 - creates a file with a name of base and extension STR:
+	     structure of base.
+ 	F9 - tunes parameters of a printing.
+~HT
+	Choose the necessary tag and press Enter or click button.
+	F2 (Shift+Tab) - prints the list (on the device _printer).
+	F3 - adds tag.
+	F4 - makes program.
+	F8 - kills tag.
+	F9 - tunes parameters of a printing.
+~NFIND
+	The results of performance of operation are shown.
+
+	To press F10 you can choose action with result.
+MENU2
+	 Choose the necessary action from the menu
+ (current choice is marked by symbols  ).
+~MAINMENU
+	Select needable submenu.
+~SECONDMENU
+	Select action from menu. If item is marked by symbol ,
+ it is submenu.
+~INFORMATIO
+	Here is information about current base,indexes,environment.
+~

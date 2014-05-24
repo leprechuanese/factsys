@@ -1,0 +1,22 @@
+;List of files BDBFS 1.15
+
+files.lst - This file
+file_id.diz - General info
+bdbfs.exe - Main executable file
+bdbfs.hlp - Help-file
+bdbfs.txt - Brief documentation
+bdbfs.reg - Windows installation file (RegEdit file)
+license.txt - License Agreement
+register.frm - Register form
+readme.txt - Brief installation description
+national.txt - Information for national languages supporting
+bdbfmsg.ch - Bdbfs messages (probably for further national translation)
+bdbfs.ico - Windows Icon
+bdbf-os2.ico - OS/2 Icon
+whatsnew.txt - Last changes
+132_COL\*.*  - Optional files for wide screen's fans
+EXAMPLES\customer.dbf/fpt/cdx - test database file
+EXAMPLES\customer.aop - example of AutoOpen file
+EXAMPLES\customer.bpf - example of report form
+EXAMPLES\examples.ini - examples of ini-files possibilities
+PLUGINS\*.* - plug-ins examples

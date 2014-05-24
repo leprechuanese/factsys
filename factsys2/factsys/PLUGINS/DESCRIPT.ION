@@ -1,0 +1,7 @@
+dbfupper.ini Make all fields UPPER
+oem2ansi.ini Oem to Ansi recoding
+par_ret.ini Parameters ¨ #RETURN example
+relation.ini SET RELATION example
+sort_crt.ini Sort current base on current field
+sum_all.ini Sum all numeric fields
+CLIPPER.CH Common include file

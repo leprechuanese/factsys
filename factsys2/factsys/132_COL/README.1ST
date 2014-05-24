@@ -1,0 +1,8 @@
+
+	You can try bdbfs in video mode 132*25.
+Usually this mode number is 55h. Differently - see doc for your
+adapter. You can change com-file directly (3-d byte).
+
+	Usage:  B132 [<file name>]. If nothing is given - the choice
+will be offered.
+

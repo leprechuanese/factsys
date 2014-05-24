@@ -1,0 +1,104 @@
+INSTALACION:
+
+LINUX: Necesitaras un emulador de DOS, incluido en el directorio 'backup'
+la version de dosbox_0.72-1.1 que he usado bajo GNU/Linux Debian Lenny/Sid,
+si usas una distro diferente a Debian, los pasos serian aproximadamente iguales,
+para *BSD aun no he probado, imagino que trabajaria sin problemas, bajo Debian,
+primero abre una terminal:
+
+Hacerte 'root' con 'su'
+su
+
+Cambiate al directorio 'factsys'
+cd /path/to/factsys    <- Substituye /path/to/factsys segun tus necesidades.
+
+Instala dosbox_0.72-1.1
+dpkg -i backup/dosbox_0.72-1.1build1_i386.deb
+
+Salte de 'root'
+logout
+
+Factsys esta preinstalado, puedes crear un atajo en tu menu, los comandos 
+para correr el programa serian:
+
+cd $HOME/path/to/factsys
+dosbox FACTSYS.EXE
+
+Podrias hacer un script y meterlo en tu menu.
+
+Posiblemente los teclas de movimiento de cursor no te funcionen, para esto necesitas 
+hacerles 'BIND' al teclado, desde tu terminal corre dosbox de esta forma:
+dosbox -startmapper
+
+Te aparecera un menu, con el raton selecciona la tecla que no te sirve, te mostrara
+las opciones 'Del' 'Add' y 'Next', selecciona 'Add' y pulsa la tecla en tu teclado 
+que deseas hacerle 'BIND', prosigue con la demas teclas de la misma manera, al
+final selecciona 'Save' y 'Exit'
+
+En el prompt de DOS, monta el directorio 'factsys' como unidad de disco C:
+mount C /path/to/factsys  o si tu $PWD es el root de 'factsys' entonces:
+mount C .
+
+Cambiate a C:
+c:
+
+PARA VER LAS OPCIONES DE FACTSYS:
+factsys /ayuda
+
+Ejecuta 'factsys'
+factsys
+
+WINDOWS:
+Si usas windows 95 (quizas windows 98) podras correrlo sin problemas desde una ventana
+del apuntador de 'ms-dos', si usas Vista como en mi caso puedes usar algun emulador
+de DOS, puedes buscar en www.download.com , www.google.com , etc, para ejecutarlo
+solo escribe:
+factsys
+
+Navegando FACTSYS:
+Selecciona opciones pulsando la primer letra del nombre de la opcion, moviendo el menu
+con las teclas de movimiento de cursor y <ENTER> u con <ESPACIO> y/o <RETROCESO> 
+y <ENTER>.
+
+Al principio 'factsys' no te preguntara por ninguna clave de acceso, es necesario que
+definas una en 'Mantenimiento->Usuarios del Sistema', es INPORTANTE que el primer
+usuario tenga prioridad 0 <-ATENCION***, pues este sera el administrador, los siguientes 
+usuarios podrian tener prioridades mas altas, 4 es la minima (solo para consulta de
+precios, saldos, etc).
+
+Ahora empieza a combiar los datos de tu compania, adiciona tus productos, proveedores,
+vendedores, etc y estaras listo.
+
+EASTERN EGGS:
+* Si pulsas <F1> aparecera un lame "salva pantallas", para regresar pulsa <F1> nuevamente 
+si haz definido algun usuario te pedira tu clave.
+
+* Si pulsas <F2> te apareces una peque~a calculadora, pulsa <ESCAPE> para salir.
+
+* Si ingresas a factsys con el parametro '/dalex' no te pedira ninguna clave de acceso y
+ingresaras con prioridad 0 (ademas que me enviara un cordial saludo heh).
+
+Algunas veses sera necesario que des mantenimiento a las bases de datos en forma
+periodica esto hara que tu informacion se reorganize, reindexe y hara varias otras
+cositas, para realizar esta tarea es necesario que saques todas las terminales del sistema 
+(eso es que todas esten en el apuntador de DOS) y ejecutes preferiblemente desde el
+servidor (o cualquier otra terminal).
+factsys /o
+factsys /d
+factsys /t
+
+NOTA: la opcion 'factsys /i' nunca fue terminada, pero si deseas instalar este
+programa sigue los pasos anteriores, si deseas instalar para otra empresa, crea
+otro directorio y copia los archivos en  'clean-database' en ese directorio, este
+directorio contiene las bases de datos al minimo, descomprime los archivos
+backup/Otros.zip, backup/Exes.zip y /backup/Factsys.zip y si lo deseas 
+descomprime los otros archivos (leer antes archivo LICENCIA).
+
+TODO: podrias usar algun editor hexadecimal y modificar las referencias a la
+muebleria, noticias de copyright etc.
+
+Si tienes cualquier duda/comentario, favor de dirigirlas a mi email en:
+dzupd@yahoo.com y zzer@users.sourceforge.net
+
+Tratare de recuperar el fuente para publicarlo en mi web, esta pendiente!
+Espero que te sirva este simple programa y buena suerte.

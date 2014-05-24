@@ -1,0 +1,182 @@
+[+] - new features
+[!] - corrected bugs
+[*] - changes
+
+	09-Jan-2001	1.15b
+	---------------------
+	[+] Support of SIX-DBFs with password.
+
+	[+] Header check/correction (see ch.31 bdbfs.txt).
+	    Accessible through menu "File".
+
+	[+] Descend sorting on current index.
+	    Accessible through menu "Base".
+
+	[+] Command line options PACK and CHECK (see ch.33 bdbfs.txt).
+
+	[+] Commands #LOCAL, #BREAK, #RETURN and parameters definition
+	    in ini-files (see ch.16 bdbfs.txt).
+
+	[+] CTRL+R refreshes current browse (in multi-user environment).
+
+	[+] The generation of the program of tags creation in
+	    "Set Tag" dialogue (ALT+T).
+
+	[+] "All/Rest" scope in "Searching in current field"
+	    dialogue (F11).
+
+	[+] Plug-ins examples (see PLUGINS directory).
+
+	[*] Keys for clipboard exchange was exchanged :-). For Windows
+	    Clipboard they are now CTRL+INS (copy), SHIFT+INS (paste).
+	    For internal clipboard -  CTRL+GREY+, GTRL+GREY-.
+
+	[*] Up to 14 strings are shown in results of long character
+	    and array expression (via ?, ALT+G, SHIFT+F6). Additionally,
+	    the source expression are shown on frame.
+
+	[!] Error when creating the new base with memo-field.
+
+	[!] Abort when the error was in primary INI-file.
+
+	[!] It wasn't the tag's choice when tag is alone in
+	    compound file.
+
+	[!] It wasn't the scrolling in long (more than screen wide)
+	    string fields edition.
+
+	[!] Wrong message "Index doesn't match" when index has
+	    "FOR" filter and current record isn't in this filter.
+
+	[!] Didn't refresh the filter after some operations with current
+	    record.
+
+	[!] The colors violation when the environment was saved and
+	    restored through the menu.
+
+	[!] Sometimes the dust inserted after the Win clipboard paste.
+
+	[!] #XCOMMAND didn't work, if it consisted of some words
+	    and was set with another amount of space in expression.
+
+	[!] NanFor function FT_STOD() caused the abort when called with
+	    wrong type of parameter.
+
+	[!] Error in emulation of FoxPro function ALen().
+
+
+	06-Nov-2000	1.14c
+	---------------------
+	[!] 3 minor bugs fixed
+
+	25-Oct-2000	1.14b
+	---------------------
+	[+] COPY/APPEND WITH DELIMITERS
+
+	[+] In operation Set fields (Ctrl+F2) and in ini-files
+	    (AOP) it is possible to specify a pattern (pictures) of a
+	    field.
+
+	[+] REINDEX and MAKE HTML from the command line (see ch.31 in
+	    BDBFS.TXT).
+
+	[*] Optimization of navigation in TBROWSE, that is felt on large
+	    indexed bases (at my computer - somewhere with 50000
+	    records).
+
+	[+] The items are added "Add tag" and "Remove tag"
+	    in SET TAG dialogue (ALT+T, Shift+F12).
+
+	[!] There were discrepancies in report and reading of
+	    AOP-files.
+
+	[!] The expressions like PAD() were not distinguished in "Seek"
+	    (F9) operation.
+
+	[!] Sometimes "Total records" was incorrectly shown in indicator.
+
+	[!] The setting "The side of record numbers printing"
+	    in print configuration dialog (F2 -> F9) worked with
+	    next report, not instantly.
+
+	[!] The tag removal did not work by a call from the menu.
+
+	[*] Automatically opens CDX, even if a file is not in current
+	    catalogue.
+
+	[!] The installation of bookmarks (Ctrl+K, Ctrl+Q) caused input
+	    in the current field of a symbol, if a symbol is not figure.
+
+	[!] Under certain conditions macro from the second level menu
+	    did not work.
+
+	[!] Mistake at opening of FoxPro files, if extension is
+	    not DBF (PJX, MNX, SPX).
+
+	[!] Summation "lengthways" (SumLine - see supplement IV) not
+	    took into account VariFields.
+
+	[*] If any correct field isn't given in "Copy To" dialogue
+	    we give out warning (earlier, besides, the screen spoiled in
+	    this case).
+
+	[!] The field name with leading spaces was perceived as
+	    expression in "Copy To" dialogue.
+
+	[!] Incorrect message at unsufficient place on disk for
+	    structure modifying.
+
+	[!] The cursor position lost in some cases after a call
+	    HELP.
+
+	[!] F10 in edition of a textual field resulted to input of dust in
+	    a field.
+
+	[!] Structure modification sometimes didn't work after setting
+	    of fields (CTRL+F2).
+
+
+	08-Aug-2000	1.13b
+	---------------------
+
+	[+] Load, Save, Print operations in memo-editor.
+
+	[+] Memo-editor can be given individually for each field
+	    (see ch.27 BDBFS.TXT)
+
+	[+] Report forms (see ch.28 BDBFS.TXT).
+
+	[+] AutoOpen files (see ch.16 BDBFS.TXT).
+
+	[+] Right button click at field calls context menu.
+
+	[!] Some rare mouse bugs in filer fixed.
+
+	[!] Sometimes couldn't write into VariField after "wide"
+	    edition (via ALT+W).
+
+	[!] The error could appear in Edit mode (via ALT+E) with
+	    VariField.
+
+	[!] VariFields with length 6 (Zero Fields) not always edited
+	    correctly.
+
+	[*] The creating VariField with length 5 is prohibited due
+	    to error in Six-driver.
+
+	[!] Cycling could appear in replacing via Ctrl+F4
+	    when field and expression types wasn't compatible.
+
+	[!] Parameter /I= (index) didn't work.
+
+	[!] Autorestoring not always worked.
+
+	[!] Empty window at index selection via F5 when any index
+	    file has too long expression.
+
+	[!] Sometimes tabulation wasn't properly shown in ViewFile.
+
+	[!] Some errors in examples.ini fixed.
+
+	[*] Some optimization.
+

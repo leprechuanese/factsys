@@ -1,0 +1,43 @@
+Viernes 8 Enero 2010
+
+MOTIVO: Dias pasados estube revizando mis archivos y me encontre un
+set de discos floppys muy viejitos, resulta ser que eran de un sistema
+que programe a finales de 1989-90 para una empresa de Estados Unidos,
+desafortunadamente el codigo fuente no me fue posible recuperarlo
+en su totalidad, fue programado si mas no recuerdo inicialmente en 3
+semanas, utilize funcionas propias para todo, desde abrir las ventanas,
+como pintar los menus horizontales y verticales, etc, nada preescrito
+de clipper fue usado en la renderizacion de ventanas y menus, entre
+mas otras funciones que no recuerdo pues el fuente lo he perdido, 
+bajo el microscopio alcanze a recuperar algunos compilados (binarios)
+asi como tambien parte de las bases de datos, tubo que 
+ser necesario reconstruir 3 de ellas, al final pude completar la
+recuperacion total del programa haciendolo operable, armandome de dosbox
+bajo linux pude comprobar que el programa corre de mil maravillas, lo he
+probado en windows 95 y bajo un emulador de DOS en windows Vista con 
+los mismos resultados, dicho lo anterior lo he puesto a disposicion del 
+publico para uso abierto a culquier persona que desee usarlo, el programa
+es multiusuarios y soporta muchas terminales a la vez.
+
+Factsys es un programa de simple de control de facturas, inventarios
+Comisiones, Clientes, Control de pagos y Control de Proveedores, etc
+disenada para una muebleria en Estados Unidos.
+
+EL programa fue escrito en Clipper en 1989 y actualizado con algunas cositas
+posteriormente en 1990, 1993(Y2K bug) y finalmente una modificacion minima 
+hecha en 1996 como consecuencia de la introduccion de Windows 95 al mercado,
+, algunas otras utilerias como 'historia, depura y etiqueta' fueron introducidas 
+despues y mandadas a la empresa via email, el programa continuo en uso 
+(y creo que continua en uso actualmente) hasta donde yo se a finales de
+diciembre'2003, que fue la ultima vez que tuve contacto con ellos, algunos 
+modulos nunca los termine, pero el programa es 100% funcional con un interfaz
+de menus muy simple de usar.
+
+Caracteristicas: Multi-Usuarios (Probados en Novell, LANtastic y DOS, Windows 3.11/95)
+, Baja Memoria, etc.
+
+Requerimientos: Minima, Una PC 286 y mejor (aunque algunas terminales que instale
+para consulta de precios en el piso de ventas de vendedores eran XT 8088/86 
+y trabajaba perfectamente).
+
+Para instrucciones sobre instalacion ver INSTALL
